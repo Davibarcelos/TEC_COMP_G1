@@ -1,5 +1,5 @@
 # 👩🏾‍💻Projeto de Tecnologia de Computadores👩🏾‍💻
-Esse projeto está sendo desenvolvido ao longo do período afim de avaliar academicamente nosso desempenho e familiariadade com o GitHub e suas funcionalidades. 
+Esse projeto está sendo desenvolvido ao longo do período afim de avaliar academicamente nosso desempenho e familiariadade com o GitHub e suas funcionalidades. (PROJETO DE CARLUXO!!!)
 
 ## 🚀Introdução do projeto🚀
 Um dos objetivos é construir um "site de uma lanchonete" partindo desde conceitos de HTML básicos até javaScript avançado e interatividade proporcionada pelo mesmo.
