@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="formprod.css">
+            <link rel="stylesheet" href="js/calculos.js">
+        <title>Cadastrar Produtos Parceiros</title>
+    </head>
+    <body>
+<header>
+<nav>
+<ul>
+    <img id="logo" src="../imagens/logo.png" alt="LOGO">
+    <a href="index.html"><li>Home</li></a>
+    <a href="Sobre.html"><li>Quem Somos</li></a>
+    <a href="cadastroinf.html"><li>Cadastrar Produto</li></a>
+    <a href="login.html"><li>Entrar</li></a>
+</ul>
+</nav>
+</header>
+
+
+    
+        <center>
+        <form class="formprod" method="post">
+            <h1>Cadastro de Produtos Alimentícios</h1>
+            
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto" placeholder="Digite o nome do produto:"required>
+            
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca" required>
+                <option value="">Selecione uma marca</option>
+                <option value="">Starbuck's</option>
+                <option value="">Mc Donald's</option>
+                <option value="">Habbib's</option>
+                <option value="">Burguer King</option>
+                <option value="">Subway</option>
+                <option value="">Outro...</option>
+            </select>
+
+            <label for="preco_custo">Preço de custo:</label>
+            <input type="number" forwat="currency" id="preco_custo" name="preco_custo" step="0.01" required>
+
+            <label for="percentual_lucro">Percentual de lucro:</label>
+            <input type="number" forwat="currency" id="percentual_lucro" name="percentual_lucro" step="0.01" required
+                onchange="calcularPrecoVenda();">
+
+            <label for="preco_venda">Preço de venda:</label>
+            <input type="number" forwat="currency" id="preco_venda" name="preco_venda" step="0.01" required><br>
+
+            <button type="button" onclick="calcular();">Calcular</button><br>
+
+            <label for="quantidade">Quantidade de itens:</label>
+            <input type="number" forwat="currency" id="quantidade" name="quantidade" required>
+
+            <label id="inputimage" for="">Imagem do produto:</label>
+            <input type="file" id="file-input">
+            <label for="file-input" class="custom-file-upload">Escolher arquivo:</label>
+
+            <button type="button" onclick="cadastrarProduto();">Cadastrar</button>
+
+        <center>
+            <script>
+                function calcular() {
+                    let preco_custo = document.getElementById("preco_custo").value;
+                    let percentual_lucro = document.getElementById("preco_custo").value;
+                    let preco_venda = document.getElementById("preco_custo").value;
+                    preco_venda = parseFloat(preco_custo) + (preco_custo * (percentual_lucro / 100));
+                    console.log("preco_custo");
+                    console.log("percentual_lucro");
+                    console.log("preco_venda");
+                    document.getElementById("preco_venda").value = preco_venda;
+                }
+
+
+                function Cadastrar() {
+                    let imagem = document.getElementById("imagem").value;
+                    let Produto = document.getElementById("produto").value;
+                    let marca = document.getElementById("marca").value;
+                    let preco_venda = document.getElementById("preco_venda").value;
+
+                    let div = document.createElement("div");
+                    let ima = document.createElement("h2")
+                    let prod = document.createElement("h2")
+                    let mar = document.createElement("h2")
+                    let vend = document.createElement("h2")
+                    ima.innerHTML = imagem;
+                    prod.innerHTML = produto;
+                    mar.innerHTML = marca;
+                    vend.innerHTML = preco_venda;
+                    div.appendChild(ima);
+                    div.appendChild(prod);
+                    div.appendChild(mar);
+                    div.appendChild(vend);
+                    document.body.appendChild("div")
+                    document.getElementById("imagem").value = "";
+                    document.getElementById("produto").value = "";
+                    document.getElementById("marca").value = "";
+                    document.getElementById("preco_venda").value = "";
+                }
+            </script>
+            
+            <button id="botao" onclick="mudarCor()">Mudar cor</button>
+            </form>
+            <script src="./js/js.js"></script>
+
+        </center>
+    </body>
+</html>
+</html>

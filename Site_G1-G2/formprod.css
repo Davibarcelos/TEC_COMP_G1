@@ -1,0 +1,100 @@
+*{
+    margin:0px;
+}
+
+.fundo2{
+    background:linear-gradient(8deg, black, transparent);
+}
+
+.formprod{
+    margin: 55px 0px 0px 0px;
+    width: 50%;
+    display: flex;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    text-align: initial;
+    background: linear-gradient(8deg, black, transparent);
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+
+.field label, .field span {
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-decoration: dashed;
+}
+
+select{
+    background: linear-gradient(8deg, black, transparent);
+    font-size: large;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    line-height: 30px;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+option{
+    border-color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+input , textarea, input[type=file]{
+    background: linear-gradient(8deg, black, transparent);
+    font-size: large;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.061);
+    line-height: 30px;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+input::placeholder{
+color: white;
+}
+
+button{
+    background: transparent;
+    border-radius:20px;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    border:3px solid rgb(255, 255, 255);
+    cursor: grabbing;
+}
+
+.custom-file-upload {
+    border: 1px solid white;
+    display: flex;
+    padding: 6px 12px;
+    cursor: pointer;
+    background:linear-gradient(8deg, black, transparent);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#file-input {
+    display: none;
+}
+  

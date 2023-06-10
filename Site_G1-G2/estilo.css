@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    text-align: center;
+    
+}
+
+#botao
+
+.formulario{
+    width: 100%;
+    padding: 30px;
+    border:2px solid #000000;
+    background-color: orange;
+    border-radius: 10px;
+    border-top:solid 5px black; 
+    border-bottom:solid 6px black ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 3px 5px black;
+    color: white;
+    
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration:overline underline;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #030303;
+    outline: none;
+    background-color: darkgreen;
+    color: rgb(255, 255, 255);
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: darkgreen;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+
